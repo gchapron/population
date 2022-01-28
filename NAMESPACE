@@ -1,0 +1,11 @@
+exportPattern("^[[:alpha:]]+")
+# useDynLib(population, C_montecarlo)
+useDynLib(population, .registration = TRUE)
+import(
+  parallel,
+  abind
+)
+
+importFrom("grDevices", "colorRampPalette")
+importFrom("graphics", "axis", "lines", "plot", "points", "polygon")
+importFrom("stats", "median", "quantile")
