@@ -1,6 +1,6 @@
 /* main.c
  *
- * Copyright (C) 2011, 2012, 2013, 2014, 2015 Guillaume Chapron.
+ * Copyright (C) 2011-2022 Guillaume Chapron.
  * gchapron@carnivoreconservation.org
  *
  * This file is part of 'population', a R package to run population simulations
@@ -33,6 +33,10 @@
 #include "mc.h"
 #include "pop.h"
 #include "tools.h"
+
+#define extern
+# include "globals.h"
+#undef extern
 
 SEXP C_montecarlo (
 			SEXP SEXP_seed,

@@ -1,6 +1,6 @@
 /* mc.h
  *
- * Copyright (C) 2011, 2012, 2013, 2014, 2015 Guillaume Chapron.
+ * Copyright (C) 2011-2022 Guillaume Chapron.
  * gchapron@carnivoreconservation.org
  *
  * This file is part of 'population', a R package to run population simulations
@@ -23,12 +23,6 @@
 #define MC_H
 
 #include "pop.h"
-
-int R_mc_seed;
-long R_number_of_years;
-long R_number_mc_runs;
-long number_mc_indiv_ever;
-long number_mc_indiv_eversize;
 
 void mc_allocate_statistics(struct statistics *stats);
 void mc_free_results(struct statistics *stats);

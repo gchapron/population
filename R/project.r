@@ -26,7 +26,7 @@ project <- function(
 	)
 
 	results <- list()
-	results$runs <- aperm(`dim<-`(t(output$runs), list(classes, years, runs)), c(2, 1, 3))
+	results$runs <- aperm(`dim<-`(t(output$runs), c(classes, years, runs)), c(2, 1, 3))
 
 	x <- gc(verbose = FALSE)
 

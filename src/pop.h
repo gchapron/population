@@ -1,6 +1,6 @@
 /* pop.h
  *
- * Copyright (C) 2011, 2012, 2013, 2014, 2015 Guillaume Chapron.
+ * Copyright (C) 2011-2022 Guillaume Chapron.
  * gchapron@carnivoreconservation.org
  *
  * This file is part of 'population', a R package to run population simulations
@@ -24,20 +24,9 @@
 
 #include "tools.h"
 
-int R_number_classes;
-double R_sex_ratio;
-
-int *R_initial_population;
-double *R_survival_md;
-double *R_survival_sd;
-double *R_litter_size_md;
-double *R_litter_size_sd;
-
 struct statistics {
 	double ***runs;
 };
-
-struct statistics *stats;
 
 typedef struct t_individual t_individual;
 typedef struct t_population t_population;

@@ -1,4 +1,4 @@
-/* tools.h
+/* globals.h
  *
  * Copyright (C) 2011-2022 Guillaume Chapron.
  * gchapron@carnivoreconservation.org
@@ -19,12 +19,27 @@
  * along with 'population'. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef TOOLS_H
-#define TOOLS_H
+#ifndef GLOBALS_H
+#define GLOBALS_H
 
-double beta_shape(double mu, double sigma);
-double beta_rate(double mu, double sigma);
-double gamma_shape(double mu, double sigma);
-double gamma_rate(double mu, double sigma);
+#include "pop.h"
+
+extern int R_mc_seed;
+extern long R_number_of_years;
+extern long R_number_mc_runs;
+extern long number_mc_indiv_ever;
+extern long number_mc_indiv_eversize;
+
+extern int R_number_classes;
+extern double R_sex_ratio;
+
+extern int *R_initial_population;
+
+extern double *R_survival_md;
+extern double *R_survival_sd;
+extern double *R_litter_size_md;
+extern double *R_litter_size_sd;
+
+extern struct statistics *stats;
 
 #endif

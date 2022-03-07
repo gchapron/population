@@ -1,6 +1,6 @@
 /* pop.c
  *
- * Copyright (C) 2011, 2012, 2013, 2014, 2015 Guillaume Chapron.
+ * Copyright (C) 2011-2022 Guillaume Chapron.
  * gchapron@carnivoreconservation.org
  *
  * This file is part of 'population', a R package to run population simulations
@@ -29,6 +29,7 @@
 #include <Rmath.h>
 
 #include "pop.h"
+#include "globals.h"
 
 #define FEMALE 0
 #define MALE 1
