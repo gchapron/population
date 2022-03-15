@@ -2,7 +2,7 @@ Package: population
 Type: Package
 Title: Models for Simulating Populations
 Version: 0.3
-Date: 2022-03-07
+Date: 2022-03-15
 Author: Guillaume Chapron
 Maintainer: Guillaume Chapron <gchapron@carnivoreconservation.org>
 Description: Run population simulations using an Individual-Based Model (IBM) compiled in C.

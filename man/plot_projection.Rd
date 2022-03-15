@@ -24,6 +24,8 @@ A list obtained after running functions 'project' or 'project_cores'.
 Plot all population projections or the median or mean with 95\% confidence interval. Only total population sizes are displayed.
 }
 
+\value{No returned value, plot created}
+
 \examples{
 years <- 10
 runs <- 100
